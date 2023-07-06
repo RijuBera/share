@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="wrapper">
+        <div class="card-wrapper">
+            <div>
+                <img src="jsfull/16516805176296027968265576153334 (2).jpg" alt="">
+            </div>
+            <div class="user-name">
+                <h2>jjjjjj jjjj</h2>
+            </div>
+            <div class="deg">
+                <h2>founder, XYZ</h2>
+            </div>
+            <div class="butten-group">
+                <button class="btn-share" onclick="openModal()" >
+                  <div> <i>--=></i>     share my profile</div>
+                </button>
+                <button class="btn-follow"> follow me</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+  
+  <div class="modal">
+    <div class="modal-header">
+        <h1>share my profile</h1>
+        <div>
+            <i id="close" onclick="closemodal()">*</i>
+        </div>
+    </div>
+    <h3>share this via</h3>
+    <div class="icon-con">
+        <a href="#" class="icon" id="fb">
+            <i>f</i>
+        </a>
+        <a href="#" class="icon" id="tt">
+            <i>t</i>
+        </a>
+        <a href="#" class="icon" id="ig">
+            <i>i</i>
+        </a>
+        <a href="#" class="icon" id="wp">
+            <i>w</i>
+        </a>
+        <a href="#" class="icon" id="tg">
+            <i>t</i>
+        </a>
+    </div>
+  
+  </div>
+
+<div class="overlay" onclick="closemodal()"></div> 
+
+</body>
+<script>
+    const a=document.querySelector(".modal")
+    const b=document.querySelector(".overlay")
+ const openModal=()=>{
+    console.log("kjhhjh")
+    a.classList.add("active");
+    b.classList.add("overlayac");
+ }
+ function closemodal(){
+    a.classList.remove("active");
+    b.classList.remove("overlayac");
+ }
+</script>
+</html>
